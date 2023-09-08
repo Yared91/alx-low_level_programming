@@ -10,12 +10,12 @@ int upperCase = 'A';
 while (lowerCase <= 'z')
 {
 putchar(lowerCase);
-lowerCase += 1;
+lowerCase++;
 }
 while (upperCase <= 'z')
 {
 putchar(upperCase);
-upperCase += 1;
+upperCase++;
 }
 putchar('\n');
 return (0);
