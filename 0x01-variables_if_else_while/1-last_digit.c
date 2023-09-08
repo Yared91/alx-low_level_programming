@@ -13,16 +13,16 @@ n = rand() - RAND_MAX / 2;
 lastd = n % 10;
 if (lastd > 5)
 {
-printf("Last digit of %d is %s and is greater than 5\n", n, "ld");
+printf("Last digit of %d is %s and is greater than 5\n", n, "s");
 }
 else if (lastd == 0)
 {
-printf("Last digit of %d is %s and is 0\n", n, "ld");
+printf("Last digit of %d is %s and is 0\n", n, "s");
 }
 else if (lastd < 6 && lastd != 0)
 {
 printf("Last digit of %d is %s and is less than 6 and not 0\n",
-n, "ld");
+n, "s");
 }
 return (0);
 }
