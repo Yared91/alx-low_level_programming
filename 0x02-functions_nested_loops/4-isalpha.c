@@ -1,23 +1,14 @@
 #include <stdio.h>
 /**
- * main - writing a function that prints the sign of a number
- * Return: 1 for positive value, -1 for negative value or 0 for zero
+ * main - writing a function that checks for alphabetic character
+ * Return: 1 for alphabetic character or 0 for anything else
  */
-int print_sign(int n)
+int _isalpha(int c)
 {
-if (n > 0)
+
+if ((c >= 65 && c <= 97) || (c >= 97 && c <= 122))
 {
-putchar(43);
 return (1);
 }
-else if (n < 0)
-{
-putchar(45);
-return (-1);
-}
-else
-{
-putchar(48);
 return (0);
-}
 }
