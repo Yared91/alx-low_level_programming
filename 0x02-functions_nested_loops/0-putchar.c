@@ -1,17 +1,17 @@
-#include <main.h>
+#include <stdio.h>
 /**
- * main - writing a program that prints putchar
+ * main - Entry point
  * Return: 0 (Success)
  */
 int main(void)
 {
-_putchar('_');
-_putchar('p');
-_putchar('w');
-_putchar('t');
-_putchar('c');
-_putchar('h');
-_putchar('a');
-_putchar('\n');
+putchar('_');
+putchar('p');
+putchar('w');
+putchar('t');
+putchar('c');
+putchar('h');
+putchar('a');
+putchar('\n');
 return (0);
 }
