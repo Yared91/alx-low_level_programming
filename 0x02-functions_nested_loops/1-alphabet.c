@@ -1,10 +1,15 @@
-#include <main.h>
+#include <stdio.h>
 /**
  * main - Writing a function that prints alphabets in lowercase
  * Return: 0 (Success)
  */
-int main(void)
+void print_alphabet(void)
 {
-print_alphabet();
-return (0);
+char c;
+
+for (c = 'a'; c <= 'z'; c++ )
+{
+putchar(c);
+}
+putchar('\n');
 }
