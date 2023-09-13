@@ -6,13 +6,11 @@
  */
 int print_last_digit(int n)
 {
-int last_digit = n % 10;
-printf("%d", last_digit);
-return (last_digit);
-}
-int main(void)
-{
-printf("%d%d%d%d", print_last_digit(98), print_last_digit(0),
-print_last_digit(-1024), print_last_digit(-1024));
-return (0);
+int k;
+
+k = n % 10;
+if (n < 0)
+k = -k;
+putchar(k + '0');
+return (k);
 }
