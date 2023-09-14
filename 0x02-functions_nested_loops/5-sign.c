@@ -2,23 +2,26 @@
 /**
  * print_sign - writing a function that prints the sign of a number
  * @n: the int to check
- * Return: 1, -1 0r 0
+ * Return: 1, -1 or 0
  */
 int print_sign(int n)
 {
+int test;
+
 if (n > 0)
 {
+test = 1;
 putchar('+');
-return (1);
 }
 else if (n == 0)
 {
+test = 0;
 putchar('0');
-return (0);
 }
 else
 {
+test = -1;
 putchar('-');
-return (-1);
 }
+return (test);
 }
