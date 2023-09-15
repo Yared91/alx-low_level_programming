@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * print_sign - writing a function that prints the sign of a number
  * @n: number to be implemented
@@ -6,22 +6,20 @@
  */
 int print_sign(int n)
 {
-int test;
 
 if (n > 0)
 {
-test = 1;
-putchar('+');
+_putchar(43);
+return (1);
 }
-else if (n == 0)
+else if (n < 0)
 {
-test = 0;
-putchar('0');
+_putchar(45);
+return (-1);
 }
 else
 {
-test = -1;
-putchar('-');
+_putchar(48);
+return (0);
 }
-return (test);
 }
