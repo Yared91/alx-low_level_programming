@@ -7,10 +7,10 @@
  * main - prints the result of simple operations
  * @argc: input
  * @argv: input
- * Return: voide
+ * Return: void
  */
 
-int main(int__attribute__((__unused__)) argc, char *argv[])
+int main(int argc, char *argv[])
 {
 int num1, num2;
 char *op;
