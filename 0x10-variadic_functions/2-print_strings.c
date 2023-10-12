@@ -7,6 +7,8 @@
  * @separator: input
  * @n: input
  * @...: input
+ * Description: if separator is NULL, it is not printed.
+ * If one of the strings is NULL, (nil) is printed instead
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
