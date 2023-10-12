@@ -7,8 +7,9 @@
  * @separator: input
  * @n: input
  * @...: input
+ *
  * Description: if separator is NULL, it is not printed.
- * If one of the strings is NULL, (nil) is printed instead
+ * If one of the strings if NULL, (nil) is printed instead
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -16,6 +17,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 va_list strings;
 char *str;
 unsigned int index;
+
 va_start(strings, n);
 for (index = 0; index < n; index++)
 {
