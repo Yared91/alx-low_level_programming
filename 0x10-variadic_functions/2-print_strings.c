@@ -4,9 +4,9 @@
 
 /**
  * print_strings - Writing a function that prints strings
- * @separator: input
- * @n: input
- * @...: input
+ * @separator: string to be printed between strings
+ * @n: number of strings passed to the function
+ * @...: variable number of strings to be printed
  *
  * Description: if separator is NULL, it is not printed.
  * If one of the strings if NULL, (nil) is printed instead.
