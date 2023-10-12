@@ -25,7 +25,7 @@ for (index = 0; index < n; index++)
 str = va_arg(strings, char *);
 
 if (str == NULL)
-printf("nil");
+printf("(nil)");
 else
 printf("%s", str);
 
