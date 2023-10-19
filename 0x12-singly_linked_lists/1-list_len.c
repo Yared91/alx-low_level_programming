@@ -10,11 +10,11 @@
 
 size_t list_len(const list_t *h)
 {
-size_t count = 0;
-while (h)
+size_t list = 0;
+for (h)
 {
 h = h->next;
-count++;
+list++;
 }
-return (count);
+return (list);
 }
