@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 /**
- * struct listint_t - self referencial struct
+ * struct listint_s - self referencial struct
  * @n: input
  * @next: pointer input
  */
