@@ -2,8 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_listint - Writing function that prints all the elements
- * of a listint_t list
+ * print_listint - prints all the elements of a listint_t list
  * @h: pointer input
  * Return: number of nodes
  */
@@ -18,6 +17,5 @@ element++;
 printf("%d\n", h->n);
 h = h->next;
 }
-
 return (element);
 }
