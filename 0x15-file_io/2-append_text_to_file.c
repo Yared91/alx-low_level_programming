@@ -20,7 +20,7 @@ file_x = open(filename, O_WRONLY | O_APPEND);
 if (file_x == -1)
 return (-1);
 
-if (!text_content)
+if (text_content)
 {
 for (count_letters = 0; text_content[count_letters]; count_letters++)
 ;
