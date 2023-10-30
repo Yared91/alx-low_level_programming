@@ -27,7 +27,7 @@ dprintf(STDERR_FILENO, "%s", "Usage: cp file_from file_to\n");
 exit(97);
 }
 source = open(argv[1], O_RDONLY);
-verify_io_status(source, -1, argv[1],'O');
+verify_io_status(source, -1, argv[1], 'O');
 destination = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, appearance);
 verify_io_status(destination, -1, argv[2], 'W');
 while (count_read == 1024)
