@@ -24,12 +24,12 @@ int binary_search(int *array, size_t size, int value)
 
 		mid = lt + (rt - lt) / 2;
 
-		if (array[mid] < value)
-			lt = mid + 1;
+		if (array[mid] == value)
+			return (mid);
 		else if (array[mid] > value)
 			rt = mid - 1;
 		else
-			return (mid);
+			lt = mid + 1;
 	}
 
 	if (!array)
