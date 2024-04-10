@@ -11,39 +11,40 @@
 
 listint_t *jump_list(listint_t *list, size_t size, int value)
 {
-size_t i = 0;
-size_t jump_size = sqrt(size);
-listint_t *node, *step;
+	size_t j = 0;
+	size_t diff_size = sqrt(size);
+	listint_t *top, *new;
 
-if (list == NULL || size == 0)
-{
-return (NULL);
-}
+	if (!list || size == 0)
+	{
+		return (NULL);
+	}
 
-/*Iterative jump phase*/
-for (node = step = list; step->index + 1 < size && step->n < value;)
-{
-node = step;
-/*Jump ahead in a loop*/
-for (i = i + jump_size; step->index < i; step = step->next)
-{
-if (step->index + 1 == size)
-break;
-}
-printf("Value checked at index [%ld] = [%d]\n", step->index, step->n);
-}
-printf("Value found between indexes [%ld] and [%ld]\n",
-		node->index, step->index);
+	/*Iterative jump phase*/
+	for (top = new = list; new->index + 1 < size && new->n < value;)
+	{
+		top = new;
+		/*Jump ahead in a loop*/
+		for (j = j + diff_size; new->index < j; new = new->next)
+		{
+			if (new->index + 1 == size)
+				break;
+		}
+		printf("Value checked at index [%ld] = [%d]\n", new->index, new->n);
+	}
+	printf("Value found between indexes [%ld] and [%ld]\n",
+			top->index, new->index);
 
-for (; node->index < step->index && node->n < value; node = node->next)
-{
-printf("Value checked at index [%ld] = [%d]\n", node->index, node->n);
-}
-printf("Value checked at index [%ld] = [%d]\n", node->index, node->n);
+	for (; top->index < new->index && top->n < value; top = top->next)
+	{
+		printf("Value checked at index [%ld] = [%d]\n", top->index, top->n);
+	}
+	printf("Value checked at index [%ld] = [%d]\n", top->index, top->n);
 
-/* Recursive linear search within the narrowed range */
-if (node->n == value)
-return (node);
-else
-return (NULL);
+	/* Recursive linear search within the narrowed range */
+
+	if (top->n == value)
+		return (top);
+	else
+		return (NULL);
 }
